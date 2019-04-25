@@ -1,0 +1,294 @@
+/*index.html*/
+/*welcome*/
+/*welcome*/
+/*welcome*/
+/*welcome*/
+/*welcome*/
+/*welcome*/
+.welcome {
+  background-image: url("../img/fon-autumn.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.welcome > .container {
+  position: relative; }
+
+@-webkit-keyframes an-list-1 {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg); }
+  33% {
+    -webkit-transform: translate(-15px, 7px) rotate(20deg);
+            transform: translate(-15px, 7px) rotate(20deg); }
+  67% {
+    -webkit-transform: translate(-7px, 3px) rotate(-20deg);
+            transform: translate(-7px, 3px) rotate(-20deg); }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg); } }
+
+@keyframes an-list-1 {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg); }
+  33% {
+    -webkit-transform: translate(-15px, 7px) rotate(20deg);
+            transform: translate(-15px, 7px) rotate(20deg); }
+  67% {
+    -webkit-transform: translate(-7px, 3px) rotate(-20deg);
+            transform: translate(-7px, 3px) rotate(-20deg); }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg); } }
+
+@-webkit-keyframes an-list-2 {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg); }
+  33% {
+    -webkit-transform: translate(15px, 7px) rotate(5deg);
+            transform: translate(15px, 7px) rotate(5deg); }
+  67% {
+    -webkit-transform: translate(-16px, 8px) rotate(-5deg);
+            transform: translate(-16px, 8px) rotate(-5deg); }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg); } }
+
+@keyframes an-list-2 {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg); }
+  33% {
+    -webkit-transform: translate(15px, 7px) rotate(5deg);
+            transform: translate(15px, 7px) rotate(5deg); }
+  67% {
+    -webkit-transform: translate(-16px, 8px) rotate(-5deg);
+            transform: translate(-16px, 8px) rotate(-5deg); }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg); } }
+
+@-webkit-keyframes an-list-3 {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg); }
+  33% {
+    -webkit-transform: translate(-85px, -7px) rotate(45deg);
+            transform: translate(-85px, -7px) rotate(45deg); }
+  67% {
+    -webkit-transform: translate(-26px, -2px) rotate(20deg);
+            transform: translate(-26px, -2px) rotate(20deg); }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg); } }
+
+@keyframes an-list-3 {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg); }
+  33% {
+    -webkit-transform: translate(-85px, -7px) rotate(45deg);
+            transform: translate(-85px, -7px) rotate(45deg); }
+  67% {
+    -webkit-transform: translate(-26px, -2px) rotate(20deg);
+            transform: translate(-26px, -2px) rotate(20deg); }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg); } }
+
+@-webkit-keyframes an-list-4 {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg); }
+  33% {
+    -webkit-transform: translate(55px, -7px) rotate(10deg);
+            transform: translate(55px, -7px) rotate(10deg); }
+  67% {
+    -webkit-transform: translate(36px, -2px) rotate(-5deg);
+            transform: translate(36px, -2px) rotate(-5deg); }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg); } }
+
+@keyframes an-list-4 {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg); }
+  33% {
+    -webkit-transform: translate(55px, -7px) rotate(10deg);
+            transform: translate(55px, -7px) rotate(10deg); }
+  67% {
+    -webkit-transform: translate(36px, -2px) rotate(-5deg);
+            transform: translate(36px, -2px) rotate(-5deg); }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0deg);
+            transform: translate(0, 0) rotate(0deg); } }
+
+.list1, .list2, .list3, .list4 {
+  position: absolute;
+  z-index: 1; }
+
+.list1 {
+  top: 65%;
+  right: 5%;
+  -webkit-animation-name: an-list-1;
+          animation-name: an-list-1;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2; }
+
+.list2 {
+  top: 70%;
+  left: 15%;
+  -webkit-animation-name: an-list-2;
+          animation-name: an-list-2;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2; }
+
+.list3 {
+  bottom: -30%;
+  right: 8%;
+  -webkit-animation-name: an-list-3;
+          animation-name: an-list-3;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2; }
+
+.list4 {
+  top: 41%;
+  left: 43%;
+  -webkit-animation-name: an-list-4;
+          animation-name: an-list-4;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2; }
+
+.logo {
+  width: 60px;
+  height: 60px; }
+
+.welcome-header {
+  position: relative;
+  z-index: 2; }
+
+.welcome-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 150px;
+  max-width: 940px; }
+
+.welcome-navigation > .logo {
+  margin-right: 100px;
+  margin-left: 50px; }
+
+.welcome_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 600px;
+  margin-left: 160px; }
+
+.welcome_link {
+  display: block;
+  padding: 20px 25px;
+  color: #083e98;
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px; }
+  .welcome_link:hover {
+    background-color: #b1b30c;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 6px gray;
+            box-shadow: 0 0 6px gray; }
+
+.welcome-main {
+  position: relative;
+  z-index: 2;
+  text-align: center; }
+
+.welcome-main_title--rim {
+  font-family: "Yeseva One", cursive;
+  font-style: italic; }
+
+.welcome-main_title {
+  font-family: "Lobster", cursive;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 46px;
+  line-height: 72px;
+  color: #083e98;
+  font-weight: normal; }
+
+.first-letter {
+  display: inline-block; }
+
+.welcome_zoch {
+  display: inline-block;
+  position: relative;
+  /*text-decoration: underline;*/ }
+  .welcome_zoch::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #083e98; }
+
+.welcome-main_text {
+  font-family: "Lobster", cursive;
+  margin: 0;
+  font-size: 32px;
+  line-height: 50px;
+  color: #3b03b9;
+  margin-bottom: 70px; }
+
+.welcome-main_button {
+  padding: 15px 40px;
+  background-color: #d42807;
+  color: #fff;
+  font-size: 16px;
+  -webkit-box-shadow: 0 0 6px #d42807;
+          box-shadow: 0 0 6px #d42807;
+  border-radius: 10px;
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s; }
+  .welcome-main_button:hover {
+    background-color: #ac2106; }

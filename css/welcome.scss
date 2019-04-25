@@ -1,0 +1,246 @@
+/*index.html*/
+$backgrcol-welcome: #b7c404;/*welcome*/
+$site-font-size: 16px;
+$site-line-height: 22px;
+$shadow-small: 0 0 6px gray;
+$color-welcome-main: #083e98;/*welcome*/
+$size-welcome-h1: 46px;/*welcome*/
+$lineh-welcome-h1: 72px;/*welcome*/
+$size-welcome-p: 32px;/*welcome*/
+$lineh-welcome-p: 50px;/*welcome*/
+$border-r: 10px;
+
+.welcome {
+	background-image: url("../img/fon-autumn.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.welcome > .container {
+	position: relative;
+}
+
+@keyframes an-list-1 {
+	0% {
+		transform: translate(0, 0) rotate(0deg);
+	}
+	33% {
+		transform: translate(-15px, 7px) rotate(20deg);
+	}
+	67% {
+		transform: translate(-7px, 3px) rotate(-20deg);
+	}
+	
+	100% {
+		transform: translate(0, 0) rotate(0deg);
+	}
+}
+
+@keyframes an-list-2 {
+	0% {
+		transform: translate(0, 0) rotate(0deg);
+	}
+	33% {
+		transform: translate(15px, 7px) rotate(5deg);
+	}
+	67% {
+		transform: translate(-16px, 8px) rotate(-5deg);
+	}
+	
+	100% {
+		transform: translate(0, 0) rotate(0deg);
+	}
+}
+
+@keyframes an-list-3 {
+	0% {
+		transform: translate(0, 0) rotate(0deg);
+	}
+	33% {
+		transform: translate(-85px, -7px) rotate(45deg);
+	}
+	67% {
+		transform: translate(-26px, -2px) rotate(20deg);
+	}
+	
+	100% {
+		transform: translate(0, 0) rotate(0deg);
+	}
+}
+
+@keyframes an-list-4 {
+	0% {
+		transform: translate(0, 0) rotate(0deg);
+	}
+	33% {
+		transform: translate(55px, -7px) rotate(10deg);
+	}
+	67% {
+		transform: translate(36px, -2px) rotate(-5deg);
+	}
+	
+	100% {
+		transform: translate(0, 0) rotate(0deg);
+	}
+}
+
+
+.list1, .list2, .list3, .list4 {
+	position: absolute;
+	z-index: 1;
+}
+
+.list1 {
+	top: 65%;
+	right: 5%;
+	animation-name: an-list-1;
+	animation-duration: 8s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 2;
+}
+
+.list2 {
+	top: 70%;
+	left: 15%;
+	animation-name: an-list-2;
+	animation-duration: 8s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 2;
+}
+
+.list3 {
+	bottom: -30%;
+	right: 8%;
+	animation-name: an-list-3;
+	animation-duration: 8s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 2;
+}
+
+.list4 {
+	top: 41%;
+	left: 43%;
+	animation-name: an-list-4;
+	animation-duration: 8s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 2;
+}
+
+
+.logo {
+	width: 60px;
+	height: 60px;
+}
+
+.welcome-header {
+	position: relative;
+	z-index: 2;
+}
+
+.welcome-navigation {
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+
+
+	margin-top: 10px;
+	margin-bottom: 150px;
+	max-width: 940px;
+}
+
+.welcome-navigation > .logo {
+	margin-right: 100px;
+	margin-left: 50px;
+}
+
+.welcome_list {
+	display: flex;
+	justify-content: space-between;
+	align-content: flex-start;
+	flex-wrap: wrap;
+
+	max-width: 600px;
+	margin-left: 160px;
+}
+
+.welcome_link {
+	display: block;
+	padding: 20px 25px;
+	color: $color-welcome-main;
+	font-family: "Roboto", sans-serif;
+	background-color: transparent;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: $site-font-size;
+	line-height: $site-line-height;
+	&:hover {
+		background-color: #b1b30c;
+		border-radius: 10px;
+		box-shadow: $shadow-small;
+	}
+}
+
+.welcome-main {
+	position: relative;
+	z-index: 2;
+	text-align: center;
+}
+
+
+.welcome-main_title--rim {
+	font-family: "Yeseva One", cursive;
+	font-style: italic;
+}
+
+.welcome-main_title {
+	font-family: "Lobster", cursive;
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: $size-welcome-h1;
+	line-height: $lineh-welcome-h1;
+	color: $color-welcome-main;
+	font-weight: normal;
+}
+
+.first-letter {
+	display: inline-block;
+}
+
+.welcome_zoch {
+	display: inline-block;	
+	position: relative;
+	/*text-decoration: underline;*/
+	&::after {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 2px;
+		bottom: -5px;
+		left: 0;
+		background-color: $color-welcome-main;
+	}
+}
+
+.welcome-main_text {
+	font-family: "Lobster", cursive;
+	margin: 0;
+	font-size: $size-welcome-p;
+	line-height: $lineh-welcome-p;
+	color: #3b03b9;
+	margin-bottom: 70px;
+}
+
+.welcome-main_button {
+	padding: 15px 40px;
+	background-color: #d42807;
+	color: #fff;
+	font-size: $site-font-size;
+	box-shadow: 0 0 6px #d42807;
+	border-radius: $border-r;
+	transition-property: background-color;
+	transition-duration: 1s;
+	&:hover {
+		background-color: #ac2106;
+
+	}
+}
