@@ -1,0 +1,76 @@
+$middle-col: #ffffff;
+$border-rad: 5px;
+
+.middle-page {
+	background-color: gold;
+	background-image: url("../img/fon-middle.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	color: $middle-col;
+	& a {
+		color: $middle-col;
+	}
+}
+
+.middle-sec {
+	padding: 10px 0;
+	padding-bottom: 30px;
+}
+
+.middle-title p {
+	display: inline-block;
+	padding: 15px 60px;
+	border: 3px solid $middle-col;
+	font-family: "Lobster", cursive;
+	font-size: 46px;
+	border-radius: $border-rad * 2;
+}
+
+.middle-title {
+	margin: 0;
+	text-align: center;
+	margin-bottom: 120px;
+}
+
+.middle-sec__wrapp {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	flex-wrap: wrap;
+
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.middle-sec__wrapp .middle__link {
+	width: 210px;
+	transform: scale(1);
+	transition: all, 0.8s;
+	margin-bottom: 130px;
+	&:hover {
+		transform: scale(1.10);
+	}
+}
+
+.middle__text {
+	position: relative;
+	text-align: center;
+	color: $middle-col;
+	&:hover {
+		color: gold;
+	}
+}
+
+.middle__text use {
+	box-shadow: 0 0 10px gray;
+}
+
+.middle__spritesvg {
+	position: absolute;
+	content: "";
+	width: 163px;
+	height: 162px;
+	top: -130px;
+	left: 45px;
+}

@@ -60,7 +60,7 @@ gulp.task('br', function() {
 
 /*створення svg спрайту*/
 gulp.task('svg', function() {                   
-    return gulp.src('img/**/aaa-*.svg')
+    return gulp.src('img/*.svg')
         .pipe(svgstore({ inlineSvg: true }))
         .pipe(rename("sprite.svg"))
         .pipe(gulp.dest('img'))

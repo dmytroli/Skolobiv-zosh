@@ -178,8 +178,8 @@
           animation-iteration-count: 2; }
 
 .logo {
-  width: 60px;
-  height: 60px; }
+  width: 120px;
+  height: 120px; }
 
 .welcome-header {
   position: relative;
@@ -197,8 +197,8 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 10px;
-  margin-bottom: 150px;
-  max-width: 940px; }
+  margin-bottom: 100px;
+  max-width: 1230px; }
 
 .welcome-navigation > .logo {
   margin-right: 100px;
@@ -216,7 +216,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 600px;
-  margin-left: 160px; }
+  margin-left: 100px; }
 
 .welcome_link {
   display: block;

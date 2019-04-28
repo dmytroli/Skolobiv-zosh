@@ -1,0 +1,78 @@
+.sliderheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0; }
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  height: 100vh;
+  background-color: lightgray;
+  border: 1px solid #000;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 30px; }
+  .item a {
+    color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: green;
+    font-weight: bold;
+    -webkit-box-shadow: 0 0 10px 1px gray;
+            box-shadow: 0 0 10px 1px gray;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: all, 1s;
+    -o-transition: all, 1s;
+    transition: all, 1s;
+    font-size: 16px; }
+    .item a:hover {
+      -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2); }
+
+.item:hover {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+
+.item-1 {
+  background-image: url("../img/child4.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; }
+
+.item-2 {
+  background-image: url("../img/child2.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; }
+
+.item-3 {
+  background-image: url("../img/child3.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; }
+
+.item-4 {
+  background-image: url("../img/child1.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; }

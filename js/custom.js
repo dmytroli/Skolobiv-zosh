@@ -1,9 +1,24 @@
 
 /*slider*/
-jQuery(document).ready(function(){
-  jQuery('.bxslider').bxSlider({
-  	controls: true
-  });
+
+$('.slider .bxslider').bxSlider({
+	  	  mode: 'fade',
+	  	  randomStart: true,
+	  	  controls: false,
+		  auto: true,
+		  autoControls: false,
+		  stopAutoOnClick: false,
+		  pager: true,
+		  pause: 6000,
+		  speed: 1000,
+		  pager: false
+});
+
+$('.slider2 .bxslider').bxSlider({
+	  	  mode: 'horizontal',
+	  	  controls: true,
+		  auto: false,
+		  controls: true,
 });
 
 /*button for mobile*/
@@ -20,43 +35,3 @@ button.addEventListener("click", function(){
 });
 
 
-/*button font-size*/
-var s12 = document.querySelector(".s-12");
-var s14 = document.querySelector(".s-14");
-var s16 = document.querySelector(".s-16");
-var size = document.querySelector(".size");
-
-s12.addEventListener("click", function(){
-	if (s14.classList.contains("active-fontsize")) {
-		s14.classList.remove("active-fontsize");
-	}
-	else {
-		s16.classList.remove("active-fontsize");
-		s12.classList.add("active-fontsize");
-	}
-
-});
-
-s14.addEventListener("click", function(){
-	if (s12.classList.contains("active-fontsize")) {
-		s12.classList.remove("active-fontsize");
-		
-	}
-	else {
-		s16.classList.remove("active-fontsize");
-		s14.classList.add("active-fontsize");
-        size.style.fontSize = '16px';
-	}
-
-});
-
-s16.addEventListener("click", function(){
-	if (s12.classList.contains("active-fontsize")) {
-		s12.classList.remove("active-fontsize");
-	}
-	else {
-		s14.classList.remove("active-fontsize");
-		s16.classList.add("active-fontsize");
-	}
-
-});

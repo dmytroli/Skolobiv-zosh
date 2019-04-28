@@ -5,40 +5,51 @@
 	font-style: normal;
 	font-display: swap;
 
-	src: url("../font/montserrat.woff2") format("woff2"),
-	     url("../font/montserrat.woff") format("woff");
+	src: url("../fonts/montserrat.woff2") format("woff2"),
+	     url("../fonts/montserrat.woff") format("woff");
 }
 
 @font-face {
 	font-family: "Lobster", cursive;
 	src:
 		local('Lobster'),
-		url("../font/Lobster-Regular.ttf") format("ttf");
+		url("../fonts/Lobster-Regular.ttf") format("ttf");
 }
 
 @font-face {
 	font-family: "Roboto", sans-serif;
 	src:
 		local("Roboto"),
-		url("../font/Roboto-Regular.ttf") format("ttf");
+		url("../fonts/Roboto-Regular.ttf") format("ttf");
 }
 
 @font-face {
 	font-family: "Roboto Bold", sans-serif;
 	src:
 		local("Roboto Bold"),
-		url("../font/Roboto-Bold.ttf") format("ttf");
+		url("../fonts/Roboto-Bold.ttf") format("ttf");
 }
 @font-face {
 	font-family: "Yeseva One", cursive;
 	src:
 		local("Yeseva One"),
-		url("../font/YesevaOne-Regular.ttf") format("ttf");
+		url("../fonts/YesevaOne-Regular.ttf") format("ttf");
+}
+
+
+@font-face {
+	font-family: 'Vollkorn SC', serif;
+	src:
+		local('Vollkorn SC'),
+		url("../fonts/VollkornSC-SemiBold.ttf") format("ttf");
 }
 
 
 
-$site-backcol: #f0f0f0;
+
+
+
+$site-backcol: #b0ccb4;
 $ight-backcol: #ffffff;
 $nav-backcol: #dceef7;
 $button-backcol: #0099d2;
@@ -82,8 +93,7 @@ button {
 	border: 0;
 	padding: 0;
 	white-space: nowrap;
-	-webkit-clip-path: inset(100%);
-	        clip-path: inset(100%);
+	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
@@ -101,10 +111,19 @@ button {
 	color: #000000;
 }
 
+/*.wow {
+	visibility: hidden;
+}*/
+
+
 @import "welcome.scss";
+@import "main.scss";
+@import "beginer.scss";
+@import "middle.scss";
+@import "beg-kl.scss";
 
 
-
+/*
 @media screen and (max-width: 1024px) {
 	
 
@@ -125,7 +144,7 @@ button {
 
 @media screen and (max-width: 320px) {
 	
-}
+}*/
 
 
 /*slider
