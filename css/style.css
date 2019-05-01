@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
@@ -72,9 +73,9 @@ button {
   line-height: 38px;
   color: #000000; }
 
-/*.wow {
-	visibility: hidden;
-}*/
+.wow {
+  visibility: hidden; }
+
 /*index.html*/
 /*welcome*/
 /*welcome*/
@@ -869,6 +870,7 @@ button {
     color: orange; }
 
 .main-footer__text {
+  display: block;
   font-size: 20px;
   color: green; }
   .main-footer__text--col {
@@ -1162,7 +1164,7 @@ button {
 
 .middle-page {
   background-color: gold;
-  background-image: url("../img/fon-middle.jpg");
+  background-image: url("../img/fon-middle1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1236,17 +1238,21 @@ button {
 
 .to-main {
   position: absolute;
-  top: 50px;
-  left: 130px;
+  top: 35px;
+  left: 180px;
   padding: 10px 20px;
-  text-transform: uppercase;
+  font-size: 14px;
   font-weight: bold;
-  border-radius: 10px;
+  letter-spacing: 1px;
+  border-radius: 7.5px;
   border: 2px dashed gold;
   color: gold;
   -webkit-transition: all, 1s;
   -o-transition: all, 1s;
   transition: all, 1s; }
+  .to-main--fotogall {
+    top: 15px;
+    left: 90px; }
   .to-main:hover {
     color: orange;
     border: 2px dashed orange; }
@@ -1262,7 +1268,12 @@ button {
   padding-bottom: 20px;
   text-align: center;
   -webkit-box-shadow: 0 -2px 15px gray;
-          box-shadow: 0 -2px 15px gray; }
+          box-shadow: 0 -2px 15px gray;
+  /*для середньої школи*/ }
+  .teacher--middle {
+    background-color: #8c4da4;
+    background-image: url("../img/fon-middle.jpg");
+    background-position: center center; }
 
 .teacher__title {
   display: inline-block;
@@ -1275,6 +1286,8 @@ button {
   padding: 10px 40px;
   margin-bottom: 40px;
   letter-spacing: 2px; }
+  .teacher__title--middle {
+    margin-bottom: 30px; }
 
 .teacher__main {
   display: -webkit-box;
@@ -1287,6 +1300,18 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 30px; }
+
+/*клас для кабінетів середньої школи*/
+.teacher__secondtitle {
+  font-family: "Lobster", cursive;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  color: #ffffff;
+  font-weight: normal;
+  border-bottom: 3px solid #ffffff;
+  padding-bottom: 15px;
+  text-align: left; }
 
 .teacher__wrapptable {
   width: 500px; }
@@ -1356,6 +1381,192 @@ button {
 .slider2 .bxslider img {
   width: 100%;
   height: auto; }
+
+.to-main {
+  position: absolute;
+  top: 35px;
+  left: 180px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 7.5px;
+  border: 2px dashed gold;
+  color: gold;
+  -webkit-transition: all, 1s;
+  -o-transition: all, 1s;
+  transition: all, 1s; }
+  .to-main--fotogall {
+    top: 15px;
+    left: 90px; }
+  .to-main:hover {
+    color: orange;
+    border: 2px dashed orange; }
+
+.teacher {
+  background-color: green;
+  background-image: url("../img/fon-beginer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1230px;
+  min-height: 700px;
+  padding: 60px 100px;
+  padding-bottom: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0 -2px 15px gray;
+          box-shadow: 0 -2px 15px gray;
+  /*для середньої школи*/ }
+  .teacher--middle {
+    background-color: #8c4da4;
+    background-image: url("../img/fon-middle.jpg");
+    background-position: center center; }
+
+.teacher__title {
+  display: inline-block;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: "Lobster", cursive;
+  font-size: 42px;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  padding: 10px 40px;
+  margin-bottom: 40px;
+  letter-spacing: 2px; }
+  .teacher__title--middle {
+    margin-bottom: 30px; }
+
+.teacher__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 30px; }
+
+/*клас для кабінетів середньої школи*/
+.teacher__secondtitle {
+  font-family: "Lobster", cursive;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  color: #ffffff;
+  font-weight: normal;
+  border-bottom: 3px solid #ffffff;
+  padding-bottom: 15px;
+  text-align: left; }
+
+.teacher__wrapptable {
+  width: 500px; }
+
+.teacher__wrapptable table {
+  width: 500px;
+  text-align: left; }
+  .teacher__wrapptable table td {
+    padding: 12px; }
+  .teacher__wrapptable table:first-child {
+    margin-bottom: 40px; }
+  .teacher__wrapptable table:last-child {
+    margin-left: 60px;
+    width: 550px; }
+
+.firstcell {
+  font-size: 30px;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  color: #d1fcca; }
+
+.secondcell {
+  font-size: 30px;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  color: white; }
+
+.teacherfoto {
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 450px;
+  margin-right: 50px; }
+
+.teacherfoto__image {
+  border: 10px double white; }
+
+.teacher-footer {
+  border-top: 3px solid #ffffff; }
+
+.teacher-footer__title {
+  margin: 0;
+  display: inline-block;
+  padding: 20px 50px;
+  color: #ffffff;
+  font-size: 20px; }
+
+.teacher-footer .slider2 {
+  margin: 0;
+  max-width: 1230px;
+  height: 450px;
+  margin: 0px auto; }
+
+.slider2 .bxslider {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: -1; }
+
+.slider2 .bxslider img {
+  width: 100%;
+  height: auto; }
+
+.fotogallery {
+  background-color: green;
+  background-image: url("../img/fon-foto1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1230px;
+  min-height: 400px;
+  padding: 60px 100px;
+  text-align: center; }
+
+.slider2 {
+  max-width: 1230px;
+  height: auto;
+  margin: 0px auto; }
+
+.slider2 .bxslider {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: -1; }
+
+.slider2 .bxslider img {
+  width: 100%;
+  height: auto; }
+
+.fotogallery__title {
+  display: inline-block;
+  margin: 0 auto;
+  color: gold;
+  font-family: "Lobster", cursive;
+  font-size: 42px;
+  border: 3px solid gold;
+  border-radius: 5px;
+  padding: 10px 40px;
+  margin-bottom: 70px;
+  letter-spacing: 2px; }
+
+.wrapp-gall {
+  outline: 20px ridge brown; }
 
 /*
 @media screen and (max-width: 1024px) {

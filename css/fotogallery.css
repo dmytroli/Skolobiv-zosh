@@ -1,0 +1,39 @@
+.fotogallery {
+  background-color: green;
+  background-image: url("../img/fon-foto1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1230px;
+  min-height: 400px;
+  padding: 60px 100px;
+  text-align: center; }
+
+.slider2 {
+  max-width: 1230px;
+  height: auto;
+  margin: 0px auto; }
+
+.slider2 .bxslider {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: -1; }
+
+.slider2 .bxslider img {
+  width: 100%;
+  height: auto; }
+
+.fotogallery__title {
+  display: inline-block;
+  margin: 0 auto;
+  color: gold;
+  font-family: "Lobster", cursive;
+  font-size: 42px;
+  border: 3px solid gold;
+  border-radius: 5px;
+  padding: 10px 40px;
+  margin-bottom: 70px;
+  letter-spacing: 2px; }
+
+.wrapp-gall {
+  outline: 20px ridge brown; }

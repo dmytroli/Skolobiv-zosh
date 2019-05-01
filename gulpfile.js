@@ -68,7 +68,7 @@ gulp.task('svg', function() {
 
 /*мініфікація зображень*/
 gulp.task('images', function() {                   
-    return gulp.src('img/**/*.{png,jpg,svg}')
+    return gulp.src('img/**/*.{png,svg}')
         .pipe(imagemin(
           [
           imagemin.jpegtran({progressive: true}),
@@ -93,7 +93,7 @@ gulp.task('watch', function() {
 });
 
 /*запуск task один за одним*/
-gulp.task('develop', gulp.series('sass', 'svg', 'images', 'webp', 'minjs')) 
+gulp.task('develop', gulp.series('sass', 'images', 'minjs')) 
 
 
 /*копіювання тільки необхідних файлів в потрібну папку для передачі клієнту*/
@@ -107,7 +107,7 @@ gulp.task('copy', function() {
       ],
       {base: '../www'}
       )
-      .pipe(gulp.dest('../client'))
+      .pipe(gulp.dest('client'))
 });
 
 

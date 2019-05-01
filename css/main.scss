@@ -461,7 +461,10 @@ $shadow: 0 0 8px gray;
  .slider2 .bxslider img {
 	width: 100%;
 	height: auto;
+
 }
+
+
 /*for-parants*/
 .for-parants {
 	background-color: #f9e7c4;
@@ -531,6 +534,7 @@ $shadow: 0 0 8px gray;
 }
 
 .main-footer__text {
+	display: block;
 	font-size: 20px;
 	color: green;
 	&--col {

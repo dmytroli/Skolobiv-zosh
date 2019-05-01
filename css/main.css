@@ -497,6 +497,7 @@
     color: orange; }
 
 .main-footer__text {
+  display: block;
   font-size: 20px;
   color: green; }
   .main-footer__text--col {

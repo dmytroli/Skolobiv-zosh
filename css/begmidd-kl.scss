@@ -1,0 +1,158 @@
+$cab-color: #ffffff;
+$border-rad: 5px;
+
+.to-main {
+	position: absolute;
+	top: 35px;
+	left: 180px;
+	padding: 10px 20px;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	border-radius: $border-rad * 1.5;
+	border: 2px dashed gold;
+	color: gold;
+	transition: all, 1s;
+	&--fotogall {
+		top: 15px;
+		left: 90px;
+	}
+	&:hover {
+		color: orange;
+		border: 2px dashed orange;
+	}
+}
+
+.teacher {
+	background-color: green;
+	background-image: url("../img/fon-beginer.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: 1230px;
+	min-height: 700px;
+	padding: 60px 100px;
+	padding-bottom: 20px;
+	text-align: center;
+	box-shadow: 0 -2px 15px gray;
+	/*для середньої школи*/
+	&--middle {
+		background-color: #8c4da4;
+		background-image: url("../img/fon-middle.jpg");
+		background-position: center center;
+	}
+}
+
+.teacher__title {
+	display: inline-block;
+	margin: 0 auto;
+	color: $cab-color;
+	font-family: "Lobster", cursive;
+	font-size: 42px;
+	border: 3px solid $cab-color;
+	border-radius: $border-rad;
+	padding: 10px 40px;
+	margin-bottom: 40px;
+	letter-spacing: 2px;
+	&--middle {
+		margin-bottom: 30px;
+	}
+}
+
+.teacher__main {
+	display: flex;
+	justify-content: space-between;
+
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+}
+
+/*клас для кабінетів середньої школи*/
+.teacher__secondtitle {
+	font-family: "Lobster", cursive;
+	font-size: 20px;
+	margin-bottom: 30px;
+	margin-left: 15px;
+	color: $cab-color;
+	font-weight: normal;
+	border-bottom: 3px solid $cab-color;
+	padding-bottom: 15px;
+	text-align: left;
+}
+
+.teacher__wrapptable {
+	width: 500px;
+}
+
+.teacher__wrapptable table{
+	width: 500px;
+	text-align: left;
+	& td {
+		padding: 12px;
+	}
+	&:first-child {
+		margin-bottom: 40px;
+	}
+	&:last-child {
+		margin-left: 60px;
+		width: 550px;
+	}
+}
+
+
+.firstcell {
+	font-size: 30px;
+	font-family: "Times New Roman", serif;
+	font-weight: bold;
+	color: #d1fcca;
+}
+
+.secondcell {
+	font-size: 30px;
+	font-family: "Times New Roman", serif;
+	font-weight: bold;
+	color: desaturate($cab-color, 40%);
+}
+.teacherfoto {
+	max-width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 450px;
+	margin-right: 50px;
+}
+
+.teacherfoto__image {
+	border: 10px double desaturate($cab-color, 70%);
+}
+
+.teacher-footer {
+	border-top: 3px solid $cab-color;
+}
+.teacher-footer__title {
+	margin: 0;
+	display: inline-block;
+	padding: 20px 50px;
+	color: $cab-color;
+	font-size: 20px;
+}
+
+.teacher-footer .slider2 {
+	margin: 0;
+	max-width: 1230px;
+	height: 450px;
+	margin: 0px auto;
+}
+
+.slider2 .bxslider {
+	position: relative;
+	width: 100%;
+	height: auto;
+	z-index: -1;
+	
+}
+
+ .slider2 .bxslider img {
+	width: 100%;
+	height: auto;
+}

@@ -111,17 +111,18 @@ button {
 	color: #000000;
 }
 
-/*.wow {
+.wow {
 	visibility: hidden;
-}*/
+}
 
 
 @import "welcome.scss";
 @import "main.scss";
 @import "beginer.scss";
 @import "middle.scss";
-@import "beg-kl.scss";
-
+@import "begmidd-kl.scss";
+@import "begmidd-kl.scss";
+@import "fotogallery.scss";
 
 /*
 @media screen and (max-width: 1024px) {

@@ -8,17 +8,13 @@ $('.slider .bxslider').bxSlider({
 		  auto: true,
 		  autoControls: false,
 		  stopAutoOnClick: false,
-		  pager: true,
-		  pause: 6000,
+		  pause: 5000,
 		  speed: 1000,
 		  pager: false
 });
 
 $('.slider2 .bxslider').bxSlider({
-	  	  mode: 'horizontal',
-	  	  controls: true,
-		  auto: false,
-		  controls: true,
+
 });
 
 /*button for mobile*/
