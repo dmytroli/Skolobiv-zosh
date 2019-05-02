@@ -74,3 +74,10 @@ $border-rad: 5px;
 	top: -130px;
 	left: 45px;
 }
+
+@media screen and (max-width: 425px) {
+	.middle-title p {
+		padding: 15px 30px;
+		font-size: 25px;
+	}
+}

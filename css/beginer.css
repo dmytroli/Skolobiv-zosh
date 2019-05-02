@@ -1,3 +1,9 @@
+.beginer-mobile {
+  display: none; }
+
+.beginer-mobile__title {
+  display: none; }
+
 .sliderheader {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,3 +82,78 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover; }
+
+@media screen and (max-width: 768px) {
+  .sliderheader {
+    display: none; }
+  .beginer-mobile {
+    display: block;
+    background-image: url("../img/fon-beginer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 40px;
+    padding-bottom: 50px;
+    color: #ffffff; }
+  .beginer-mobile__title {
+    display: block;
+    margin: 0 100px;
+    text-align: center;
+    padding: 15px 40px;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    font-family: "Lobster", cursive;
+    font-size: 46px;
+    border-radius: 10px;
+    margin-bottom: 280px; }
+  .beginer-mobile__icon-wrapp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .beginer-mobile__text {
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 270px;
+    padding: 0 100px;
+    color: #ffffff; }
+    .beginer-mobile__text:hover {
+      color: orange; }
+  .beginer-mobile__image {
+    position: absolute;
+    top: -230px;
+    left: 50%;
+    margin-left: -105px; } }
+
+@media screen and (max-width: 425px) {
+  .beginer-mobile__title {
+    display: block;
+    margin: 0 25px;
+    padding: 15px 20px;
+    font-size: 35px;
+    margin-bottom: 280px;
+    letter-spacing: 2px; } }
+
+@media screen and (max-width: 320px) {
+  .beginer-mobile__title {
+    margin: 0;
+    margin-bottom: 280px; }
+  .beginer-mobile__text {
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 270px;
+    padding: 0 80px;
+    color: #ffffff; }
+    .beginer-mobile__text:hover {
+      color: orange; } }

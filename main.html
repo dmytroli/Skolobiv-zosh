@@ -18,7 +18,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Vollkorn+SC:700" rel="stylesheet">
 
 </head>
-<body>
+<body class="maindocum">
 	<header class="main-header">
 		<div class="container">
 			<section class="main-header-topsection">
@@ -85,6 +85,7 @@
 
 	<main class="main-block">
 		<div class="container">
+			<img src="img/sk-zosh-mob.jpg" alt="school" class="main-block__mobile-image wow fadeIn" data-wow-duration="2s">
 			<article class="slider wow fadeIn" data-wow-duration="2s" data-wow-delay="1.2s">
 				<h2 class="visually-hidden">Slider</h2>
 				<ul class="bxslider">
@@ -151,7 +152,8 @@
 
 		</div>
 
-		<section class="parallax-window" data-parallax="scroll" data-image-src="img/sk-zosh4.jpg" data-position="center center">
+		<div class="container">
+			<section class="parallax-window" data-parallax="scroll" data-image-src="img/sk-zosh4.jpg" data-position="center center">
 			<!--<div class="parallax-s__wrapp">
 				<h2 class="title title--paralacs">Запрошення!!!
 				</h2>
@@ -159,17 +161,20 @@
 					Запрошуємо всіх відвідати нашу школу. Ми раді всіх бачити на території нашого закладу.
 				</p>
 			</div> -->
-		</section>
+			</section>
 
-		<section class="parallax-window--mobile" data-parallax="scroll" data-image-src="img/sk-zosh4.jpg" data-position="center 0">
-			<!--<div class="parallax-s__wrapp">
-				<h2 class="title title--paralacs">	Запрошення!!!
-				</h2>
-				<p class="parallax-s__text">
-					Запрошуємо всіх відвідати нашу школу. Ми раді всіх бачити на території нашого закладу.
-				</p>
-			</div> -->
-		</section>
+			<section class="parallax-window--mobile" data-parallax="scroll" data-image-src="img/sk-zosh4.jpg" data-position="center center">
+				<!--<div class="parallax-s__wrapp">
+					<h2 class="title title--paralacs">	Запрошення!!!
+					</h2>
+					<p class="parallax-s__text">
+						Запрошуємо всіх відвідати нашу школу. Ми раді всіх бачити на території нашого закладу.
+					</p>
+				</div> -->
+			</section>
+		</div>
+
+		
 
 		<div class="container">
 			<section class="director">
@@ -216,6 +221,7 @@
 					<h3 class="director-footer__title">
 						Фото кабінету директора
 					</h3>
+					<img src="img/cab5.jpg" alt="cabdir foto" class="director-footer__foto-for-mobile">
 					<article class="slider2">
 						<h2 class="visually-hidden">Slider</h2>
 						<ul class="bxslider">
@@ -287,9 +293,13 @@
 	<footer class="main-footer">
 		<a id="com"></a>
 		<div class="container">
-		<svg class="sprite-svg">
-			<use xlink:href="img/sprite.svg#logo" viewBox="0 0 250 240" width="150" height="135"></use>
+		<!--<svg class="sprite-svg">
+			<use xlink:href="img/sprite.svg#logo"></use>
 		</svg>
+		<svg class="sprite-svg--mobile">
+			<use xlink:href="img/sprite.svg#logo"></use>
+		</svg> -->
+		<img src="img/logo.png" alt="logotip" class="footer__logo">
 		<div class="main-footer__wrappcenter">
 			<a href="https://www.facebook.com/profile.php?id=100035767121846&fref=pb&hc_location=friends_tab" class="main-footer__link">Наш Facebook</a>
 			<span class="main-footer__text">Наш Email:

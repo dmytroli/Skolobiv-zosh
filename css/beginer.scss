@@ -1,4 +1,13 @@
+$beginer-col: #ffffff;
+$border-rad: 5px;
 
+.beginer-mobile {
+  display: none;
+}
+
+.beginer-mobile__title {
+  display: none;
+}
 
 .sliderheader {
   display: flex;
@@ -57,4 +66,87 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .sliderheader {
+    display: none;
+  }
+  .beginer-mobile {
+    display: block;
+    background-image: url("../img/fon-beginer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 40px;
+    padding-bottom: 50px;
+    color: $beginer-col;
+  }
+
+  .beginer-mobile__title {
+    display: block;
+    margin: 0 100px;
+
+    text-align: center;
+    padding: 15px 40px;
+    color: $beginer-col;
+    border: 3px solid $beginer-col;
+    font-family: "Lobster", cursive;
+    font-size: 46px;
+    border-radius: $border-rad * 2;
+    margin-bottom: 280px;
+  }
+  
+  .beginer-mobile__icon-wrapp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .beginer-mobile__text {
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 270px;
+    padding: 0 100px;
+    color: $beginer-col;
+    &:hover {
+      color: orange;
+    }
+  }
+
+  .beginer-mobile__image {
+    position: absolute;
+    top: -230px;
+    left: 50%;
+    margin-left: -105px;
+  }
+
+
+
+}
+
+@media screen and (max-width: 425px) {
+  .beginer-mobile__title {
+    display: block;
+    margin: 0 25px;
+    padding: 15px 20px;
+    font-size: 35px;
+    margin-bottom: 280px;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .beginer-mobile__title {
+    margin: 0;
+    margin-bottom: 280px;
+  }
+
+  .beginer-mobile__text {
+    padding: 0 80px;
+    }
+  }
 }

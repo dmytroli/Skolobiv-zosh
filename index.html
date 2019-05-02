@@ -29,8 +29,9 @@
 
 		<header class="welcome-header">
 			<nav class="welcome-navigation">
-				<img src="img/logo.png" alt="logotip" class="logo wow bounceInLeft" data-wow-duration="2s">
-				<ul class="list welcome_list wow bounceInRight" data-wow-duration="2s">
+				<img src="img/logo.png" alt="logotip"class="logo wow bounceInLeft" data-wow-duration="2s" width="340" height="305">
+				<button class="wel-button-mobile"></button>
+				<ul class="list welcome_list menu-mobile--close wow bounceInRight" data-wow-duration="2s">
 					<li class="welcome_item"><a href="main.html" class="welcome_link">Головна</a></li>
 					<li class="welcome_item"><a href="main.html#forschool" class="welcome_link">Інформація</a></li>
 					<li class="welcome_item"><a href="main.html#news" class="welcome_link">Новини</a></li>
@@ -40,21 +41,23 @@
 		</header>
 		<main class="welcome-main">
 			<h1 class="welcome-main_title"><span class="first-letter wow bounceInLeft" data-wow-duration="2s" data-wow-delay="1s">Вас вітає</span>
-				<span class="welcome_zoch wow fadeInRight" data-wow-duration="2s" data-wow-delay="1.7s">
-					Сколобівська ЗОШ <span class="welcome-main_title--rim">I-II</span> ступенів 
-				</span>
+			<span class="welcome_zoch wow fadeInRight" data-wow-duration="2s" data-wow-delay="1.7s">
+					
+				Сколобівська ЗОШ
+				<span class="welcome-main_title--rim">I-II</span> ступенів 
+			</span>
 			</h1>
 			<p class="welcome-main_text wow zoomIn" data-wow-duration="2s" data-wow-delay="5s">Ми раді вас бачити на своєму сайті</p>
 			<a href="main.html" class="link-button   welcome-main_button wow flipInX" data-wow-duration="1.4s" data-wow-delay="7s">Увійти на сайт</a>
 		</main>
 	</div>
 	
-
-	
-</body>
+	<script src="js/welcome.js"></script>
 	<script src="js/wow.min.js"></script>
     <script>
-       new WOW().init();
+       new WOW({
+    mobile: false
+  }).init();
     </script>
 </body>
 </html>
