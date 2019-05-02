@@ -53,3 +53,9 @@ $border-rad: 5px;
 .wrapp-gall {
 	outline: 20px ridge brown;
 }
+
+@media screen and (max-width: 1024px) {
+	.fotogallery {
+		padding-bottom: 230px;
+	}
+}

@@ -148,12 +148,4 @@
     margin: 0;
     margin-bottom: 280px; }
   .beginer-mobile__text {
-    position: relative;
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 270px;
-    padding: 0 80px;
-    color: #ffffff; }
-    .beginer-mobile__text:hover {
-      color: orange; } }
+    padding: 0 80px; } }

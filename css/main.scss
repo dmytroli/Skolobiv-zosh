@@ -727,6 +727,10 @@ $shadow: 0 0 8px gray;
 		margin-right: 55px;
 	}
 
+	#fotogall {
+		display: none;
+	}
+
 	.section-menu {
 		position: relative;
 		padding-left: 20px;
@@ -1115,6 +1119,3 @@ $shadow: 0 0 8px gray;
 	
 }
 
-@media screen and (max-width: 320px) {
-	
-}

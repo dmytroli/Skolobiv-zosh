@@ -482,7 +482,7 @@ button {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     right: 70px;
-    top: -20px;
+    top: -25px;
     width: 160px;
     background-color: lightyellow;
     z-index: 10000; }
@@ -1151,6 +1151,8 @@ button {
     text-align: center;
     color: #5f5ffa;
     margin-right: 55px; }
+  #fotogall {
+    display: none; }
   .section-menu {
     position: relative;
     padding-left: 20px;
@@ -1615,15 +1617,7 @@ button {
     margin: 0;
     margin-bottom: 280px; }
   .beginer-mobile__text {
-    position: relative;
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 270px;
-    padding: 0 80px;
-    color: #ffffff; }
-    .beginer-mobile__text:hover {
-      color: orange; } }
+    padding: 0 80px; } }
 
 .middle-page {
   background-color: gold;
@@ -1834,6 +1828,9 @@ button {
   color: #ffffff;
   font-size: 20px; }
 
+.teacher-footer__foto-for-mobile {
+  display: none; }
+
 .teacher-footer .slider2 {
   margin: 0;
   max-width: 1230px;
@@ -1850,151 +1847,139 @@ button {
   width: 100%;
   height: auto; }
 
-.to-main {
-  position: absolute;
-  top: 35px;
-  left: 180px;
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  border-radius: 7.5px;
-  border: 2px dashed gold;
-  color: gold;
-  -webkit-transition: all, 1s;
-  -o-transition: all, 1s;
-  transition: all, 1s; }
-  .to-main--fotogall {
-    top: 15px;
-    left: 90px; }
-  .to-main:hover {
-    color: orange;
-    border: 2px dashed orange; }
-
-.teacher {
-  background-color: green;
-  background-image: url("../img/fon-beginer.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 1230px;
-  min-height: 700px;
-  padding: 60px 100px;
-  padding-bottom: 20px;
-  text-align: center;
-  -webkit-box-shadow: 0 -2px 15px gray;
-          box-shadow: 0 -2px 15px gray;
-  /*для середньої школи*/ }
-  .teacher--middle {
-    background-color: #8c4da4;
-    background-image: url("../img/fon-middle.jpg");
-    background-position: center center; }
-
-.teacher__title {
-  display: inline-block;
-  margin: 0 auto;
-  color: #ffffff;
-  font-family: "Lobster", cursive;
-  font-size: 42px;
-  border: 3px solid #ffffff;
-  border-radius: 5px;
-  padding: 10px 40px;
-  margin-bottom: 40px;
-  letter-spacing: 2px; }
-  .teacher__title--middle {
-    margin-bottom: 30px; }
-
-.teacher__main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-bottom: 30px; }
-
-/*клас для кабінетів середньої школи*/
-.teacher__secondtitle {
-  font-family: "Lobster", cursive;
-  font-size: 20px;
-  margin-bottom: 30px;
-  margin-left: 15px;
-  color: #ffffff;
-  font-weight: normal;
-  border-bottom: 3px solid #ffffff;
-  padding-bottom: 15px;
-  text-align: left; }
-
-.teacher__wrapptable {
-  width: 500px; }
-
-.teacher__wrapptable table {
-  width: 500px;
-  text-align: left; }
-  .teacher__wrapptable table td {
-    padding: 12px; }
-  .teacher__wrapptable table:first-child {
-    margin-bottom: 40px; }
+@media screen and (max-width: 1024px) {
+  .teacher__title--bigwidth {
+    font-size: 46px;
+    padding: 10px 30px;
+    margin-left: -5px;
+    margin-top: 60px; }
+  .teacher__title--ukr {
+    font-size: 40px;
+    padding: 10px 40px;
+    margin-top: 50px; }
+  .to-main {
+    left: 120px; }
   .teacher__wrapptable table:last-child {
-    margin-left: 60px;
-    width: 550px; }
+    margin-left: 0;
+    width: 500px; } }
 
-.firstcell {
-  font-size: 30px;
-  font-family: "Times New Roman", serif;
-  font-weight: bold;
-  color: #d1fcca; }
+@media screen and (max-width: 768px) {
+  .teacher {
+    padding-bottom: 0; }
+  .to-main {
+    left: 50%;
+    margin-left: -80px; }
+  .teacher__title {
+    margin-top: 80px;
+    margin-left: -10px; }
+  .teacher__title--bigwidth {
+    font-size: 46px;
+    padding: 10px 30px;
+    margin-left: -5px; }
+  .teacher__main {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .teacher__wrapptable {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+  .teacher__wrapptable table:first-child {
+    margin-bottom: 40px;
+    margin-top: 15px; }
+  .teacher__wrapptable table:last-child {
+    margin-left: 0;
+    width: 500px; }
+  .teacherfoto {
+    margin-right: 0; }
+  .teacherfoto__image {
+    border: 10px double white; } }
 
-.secondcell {
-  font-size: 30px;
-  font-family: "Times New Roman", serif;
-  font-weight: bold;
-  color: white; }
+@media screen and (max-width: 425px) {
+  .teacher {
+    padding-bottom: 70px; }
+  .to-main {
+    margin-left: -55px; }
+  .teacher__title--bigwidth {
+    font-size: 22px;
+    padding: 10px 10px; }
+  .teacher__title--inm, .teacher__title--majs, .teacher__title--ukr {
+    font-size: 30px;
+    padding: 10px 20px; }
+  .teacher__secondtitle {
+    display: none; }
+  .teacher__wrapptable {
+    width: 400px; }
+  .teacher__wrapptable table {
+    width: 300px; }
+    .teacher__wrapptable table td {
+      padding: 7px; }
+    .teacher__wrapptable table:first-child {
+      margin-bottom: 15px;
+      margin-top: 20px; }
+    .teacher__wrapptable table:last-child {
+      width: 300px; }
+  .firstcell {
+    font-size: 18px; }
+  .secondcell {
+    font-size: 18px; }
+  .teacher-footer__title {
+    padding: 20px 15px; }
+  .teacher-footer {
+    border-top: 3px solid #ffffff;
+    width: 150%;
+    margin-left: -57px;
+    text-align: center; }
+  #teach-slider {
+    display: none; }
+  .teacher-footer__foto-for-mobile {
+    display: inline-block;
+    width: 100%;
+    height: auto; } }
 
-.teacherfoto {
-  max-width: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 450px;
-  margin-right: 50px; }
+@media screen and (max-width: 375px) {
+  .teacher__title {
+    margin-top: 80px;
+    margin-left: -35px; }
+  .teacher__title--bigwidth {
+    font-size: 22px;
+    padding: 10px 10px;
+    margin-left: -5px; }
+  .teacher__title--inm {
+    font-size: 40px;
+    padding: 10px 40px;
+    margin-left: -45px; }
+  .teacher__title--ukr {
+    font-size: 40px;
+    padding: 10px 40px;
+    margin-left: -65px; }
+  .teacher__title--majs {
+    margin-right: -45px; }
+  .teacher-footer {
+    margin-left: -45px; } }
 
-.teacherfoto__image {
-  border: 10px double white; }
-
-.teacher-footer {
-  border-top: 3px solid #ffffff; }
-
-.teacher-footer__title {
-  margin: 0;
-  display: inline-block;
-  padding: 20px 50px;
-  color: #ffffff;
-  font-size: 20px; }
-
-.teacher-footer .slider2 {
-  margin: 0;
-  max-width: 1230px;
-  height: 450px;
-  margin: 0px auto; }
-
-.slider2 .bxslider {
-  position: relative;
-  width: 100%;
-  height: auto;
-  z-index: -1; }
-
-.slider2 .bxslider img {
-  width: 100%;
-  height: auto; }
+@media screen and (max-width: 320px) {
+  .teacher__title {
+    margin-top: 80px;
+    margin-left: -65px; }
+  .teacher__title--bigwidth {
+    font-size: 22px;
+    padding: 10px 10px;
+    margin-left: -25px; }
+  .teacher__title--inm {
+    font-size: 35px;
+    padding: 10px 30px;
+    margin-left: -45px; }
+  .teacher__title--ukr {
+    font-size: 30px;
+    padding: 10px 20px;
+    margin-left: -45px; }
+  .teacher__title--majs {
+    margin-left: -45px; }
+  .teacher-footer {
+    margin-left: -55px;
+    width: 200%; } }
 
 .fotogallery {
   background-color: green;
@@ -2035,6 +2020,10 @@ button {
 
 .wrapp-gall {
   outline: 20px ridge brown; }
+
+@media screen and (max-width: 1024px) {
+  .fotogallery {
+    padding-bottom: 230px; } }
 
 /*
 @media screen and (max-width: 1024px) {

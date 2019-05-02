@@ -637,6 +637,8 @@
     text-align: center;
     color: #5f5ffa;
     margin-right: 55px; }
+  #fotogall {
+    display: none; }
   .section-menu {
     position: relative;
     padding-left: 20px;
