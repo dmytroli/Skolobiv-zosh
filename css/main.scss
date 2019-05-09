@@ -64,6 +64,7 @@ $shadow: 0 0 8px gray;
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
+	padding-left: 40px;
 }
 
 .button-mobile {
@@ -312,7 +313,7 @@ $shadow: 0 0 8px gray;
 	max-width: 1230px;
 	min-height: 700px;
 	padding: 60px 100px;
-	padding-bottom: 20px;
+	padding-bottom: 160px;
 	text-align: center;
 	box-shadow: 0 -2px 15px gray;
 }

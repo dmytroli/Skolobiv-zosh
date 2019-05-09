@@ -345,9 +345,9 @@ $border-r: 10px;
 	font-size: $site-font-size;
 	line-height: $site-line-height;
 	&:hover {
-		background-color: #b1b30c;
-		border-radius: 10px;
-		box-shadow: $shadow-small;
+		background-color: #c0dbe4;
+		border-radius: 0;
+		box-shadow: none;
 	}
 }
 
