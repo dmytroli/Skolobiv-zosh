@@ -30,7 +30,7 @@ gulp.task('clean', function () {
   </div>
 */
 gulp.task('phtml', function() {
-  return gulp.src('../www/*.html')
+  return gulp.src('*.html')
     .pipe(posthtml([include()]))
     .pipe(gulp.dest('client/')) 
 });
@@ -63,7 +63,7 @@ gulp.task('minjs', function() {
 gulp.task('br', function() {   
     browserSync.init({server: '.'});
     gulp.watch('css/**/*.scss', gulp.series('sass'));
-    gulp.watch('../www/*.html').on('change', browserSync.reload);
+    gulp.watch('*.html').on('change', browserSync.reload);
     gulp.watch('css/*.scss').on('change', browserSync.reload);
 });
 
