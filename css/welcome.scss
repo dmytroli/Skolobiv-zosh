@@ -247,7 +247,11 @@ $border-r: 10px;
 
 @media screen and (max-width: 1024px) {
 	.welcome {
-		background-size: 100vw 100vh;
+		background-size: cover;
+	}
+
+	.list3 {
+		bottom: 45%;
 	}
 	.welcome-navigation > .logo {
 		margin-left: 100px;
@@ -258,13 +262,21 @@ $border-r: 10px;
 		margin-top: 30px;
 	}
 	.welcome-navigation {
-		margin-bottom: 150px;
+		margin-bottom: 75px;
 		margin-top: 20px;
 	}
 
 }
 
 @media screen and (max-width: 768px) {
+	.welcome {
+		padding-bottom: 80px;
+	}
+
+	.list1 {
+		display: none;
+	}
+
 	.welcome-navigation {
 		margin-top: 5px;
 		margin-bottom: 50px;
@@ -272,11 +284,12 @@ $border-r: 10px;
 	}
 
 	.welcome-navigation > .logo {
-		margin-left: 100px;
+		margin-left: 80px;
 		margin-right: 0;
 	}
 
 	.welcome_list {
+		display: flex;
 		flex-wrap: nowrap;
 		max-width: 700px;
 		margin-left: 0;
@@ -288,11 +301,13 @@ $border-r: 10px;
 }
 
 @media screen and (max-width: 425px) {
+	.welcome {
+		background-size: cover;
+
+	}
+
 	.list1 {
 		display: none;
-		top: 85%;
-		right: 5%;
-
 	}
 
 	.list2 {
@@ -302,8 +317,6 @@ $border-r: 10px;
 
 	.list3 {
 		display: none;
-		bottom: -60%;
-		right: 43%;
 	}
 
 	.list4 {
@@ -323,7 +336,7 @@ $border-r: 10px;
 
 
 		margin-top: 5px;
-		margin-bottom: 100px;
+		margin-bottom: 40px;
 		max-width: 425px;
 	}
 
@@ -374,9 +387,7 @@ $border-r: 10px;
 		}
 	}
 
-	.menu-mobile--close {
-		display: none;
-	}
+	
 
 	.welcome_list {
 		position: absolute;
@@ -401,7 +412,9 @@ $border-r: 10px;
 
 	.welcome-main_text {
 		font-size: 20px;
+		margin-bottom: 40px;
 	}
+
 
 	.welcome_zoch {
 		font-size: 30px;
@@ -412,7 +425,9 @@ $border-r: 10px;
 		background-color: transparent;
 		}
 	}
-
+	.welcome_list-mobile--close {
+		display: none;
+	}
 	
 
 }

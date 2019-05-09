@@ -628,7 +628,7 @@ $shadow: 0 0 8px gray;
 		width: 100%;
 		box-sizing: border-box;
 		padding: 60px 60px;
-		padding-bottom: 0;
+		padding-bottom: 100px;
 	}
 
 
@@ -779,7 +779,7 @@ $shadow: 0 0 8px gray;
 		padding-left: 30px;
 	}
 
-	.menu-mobile--close {
+	.main-menu-mobile--close {
 		display: none;
 	}
 
@@ -803,7 +803,7 @@ $shadow: 0 0 8px gray;
 	
 	/*director*/
 	.director {
-		padding: 60px 20px;
+		padding: 60px 40px;
 	}
 
 
@@ -960,6 +960,10 @@ $shadow: 0 0 8px gray;
 
 	.all-news__info {
 		order: 1;
+	}
+
+	.director__title {
+		font-size: 30px
 	}
 
 	.director__wrapptable {

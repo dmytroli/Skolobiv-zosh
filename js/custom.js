@@ -22,11 +22,11 @@ var button = document.querySelector(".button-mobile");
 var menu = document.querySelector(".menu");
 
 button.addEventListener("click", function(){
-	if (menu.classList.contains("menu-mobile--close")) {
-		menu.classList.remove("menu-mobile--close");
+	if (menu.classList.contains("main-menu-mobile--close")) {
+		menu.classList.remove("main-menu-mobile--close");
 	}
 	else {
-		menu.classList.add("menu-mobile--close");
+		menu.classList.add("main-menu-mobile--close");
 	}
 });
 
