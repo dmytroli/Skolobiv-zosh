@@ -10,21 +10,21 @@
 }
 
 @font-face {
-	font-family: "Lobster", cursive;
+	font-family: "Lobster", 'Times New Roman', cursive;
 	src:
 		local('Lobster'),
 		url("../fonts/Lobster-Regular.ttf") format("ttf");
 }
 
 @font-face {
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	src:
 		local("Roboto"),
 		url("../fonts/Roboto-Regular.ttf") format("ttf");
 }
 
 @font-face {
-	font-family: "Roboto Bold", sans-serif;
+	font-family: "Roboto Bold", "Arial", sans-serif;
 	src:
 		local("Roboto Bold"),
 		url("../fonts/Roboto-Bold.ttf") format("ttf");
@@ -38,11 +38,12 @@
 
 
 @font-face {
-	font-family: 'Vollkorn SC', serif;
+	font-family: 'Vollkorn SC', 'Times New Roman', serif;
 	src:
 		local('Vollkorn SC'),
 		url("../fonts/VollkornSC-SemiBold.ttf") format("ttf");
 }
+
 
 
 
@@ -122,6 +123,7 @@ button {
 @import "middle.scss";
 @import "begmidd-kl.scss";
 @import "fotogallery.scss";
+@import "archive.scss";
 
 /*
 @media screen and (max-width: 1024px) {

@@ -128,6 +128,17 @@ $border-rad: 5px;
 
 }
 
+@media screen and (max-width: 567px) {
+  .beginer-mobile__title {
+    display: block;
+    margin: 0 25px;
+    padding: 15px 20px;
+    font-size: 45px;
+    margin-bottom: 280px;
+    letter-spacing: 2px;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .beginer-mobile__title {
     display: block;

@@ -11,12 +11,15 @@ $lineh-welcome-p: 50px;/*welcome*/
 $border-r: 10px;
 
 .welcome {
+	padding-top: 10px;
 	background-image: url("../img/fon-autumn.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .welcome > .container {
 	position: relative;
+	padding-bottom: 100px;
+	margin-bottom: 400px;
 }
 
 @keyframes an-list-1 {
@@ -215,7 +218,7 @@ $border-r: 10px;
 		content: "";
 		width: 100%;
 		height: 2px;
-		bottom: -5px;
+		bottom: 5px;
 		left: 0;
 		background-color: $color-welcome-main;
 	}
@@ -246,19 +249,22 @@ $border-r: 10px;
 }
 
 @media screen and (max-width: 1024px) {
-	.welcome {
+	.welcome > .container {
 		background-size: cover;
+		padding-bottom: 100px;
+		margin-bottom: 300px;
 	}
 
 	.list3 {
 		bottom: 45%;
 	}
 	.welcome-navigation > .logo {
-		margin-left: 100px;
+		margin-left: 80px;
+		margin-right: 20px;
 	}
 
 	.welcome_list {
-		margin-left: 20px;
+		margin-left: 10px;
 		margin-top: 30px;
 	}
 	.welcome-navigation {
@@ -270,7 +276,9 @@ $border-r: 10px;
 
 @media screen and (max-width: 768px) {
 	.welcome {
-		padding-bottom: 80px;
+		background-size: cover;
+		padding-top: 20px;
+		padding-bottom: 280px;
 	}
 
 	.list1 {
@@ -284,28 +292,77 @@ $border-r: 10px;
 	}
 
 	.welcome-navigation > .logo {
-		margin-left: 80px;
+		width: 70px;
+		height: 70px;
+		margin-top: 20px;
+		margin-left: 40px;
 		margin-right: 0;
 	}
+	.welcome_zoch {
+		display: inline-block;	
+		position: relative;
+		/*text-decoration: underline;*/
+		&::after {
+			width: 0;
+			height: 0;
+		}
+	}
+
 
 	.welcome_list {
 		display: flex;
 		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
 		max-width: 700px;
-		margin-left: 0;
+		margin-left: 20px;
+	}
+
+	.welcome_item {
+		flex-shrink: 1;
 	}
 
 	.welcome_link {
-		padding: 20px 20px;
+		padding: 20px 15px;
+	}
+}
+
+@media screen and (max-width: 690px) {
+
+	.welcome_link {
+		padding: 20px 10px;
+	}
+}
+
+@media screen and (max-width: 567px) {
+	.welcome {
+		background-size: cover;
+		padding-top: 20px;
+		padding-bottom: 120px;
+	}
+	.welcome_link {
+
+		font-size: $site-font-size * 0.7;
+		line-height: $site-line-height;
+	}
+	.welcome_list {
+		margin-left: 0;
+	}
+	.welcome-main_title {
+		font-size: 40px;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+
+	.welcome-main_text {
+		font-size: 22px;
 	}
 }
 
 @media screen and (max-width: 425px) {
 	.welcome {
-		background-size: cover;
-
+		padding-bottom: 320px;
 	}
-
 	.list1 {
 		display: none;
 	}
@@ -336,13 +393,14 @@ $border-r: 10px;
 
 
 		margin-top: 5px;
-		margin-bottom: 40px;
+		margin-bottom: 80px;
 		max-width: 425px;
 	}
 
 	.welcome-navigation > .logo {
 		margin-left: 30px;
 		margin-right: 0;
+		margin-top: 0;
 		width: 50px;
 		height: 50px;
 	}
@@ -416,15 +474,7 @@ $border-r: 10px;
 	}
 
 
-	.welcome_zoch {
-		font-size: 30px;
-	&::after {
-		position: absolute;
-		width: 0;
-		height: 0;
-		background-color: transparent;
-		}
-	}
+	
 	.welcome_list-mobile--close {
 		display: none;
 	}
@@ -433,10 +483,12 @@ $border-r: 10px;
 }
 
 @media screen and (max-width: 375px) {
-	
-}
 
+}
 @media screen and (max-width: 320px) {
+	.welcome-main_title {
+		font-size: 30px;
+	}
 
 	.welcome-main_text {
 		font-size: 18px;

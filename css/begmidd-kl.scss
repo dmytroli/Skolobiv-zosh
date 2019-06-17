@@ -46,7 +46,7 @@ $border-rad: 5px;
 	display: inline-block;
 	margin: 0 auto;
 	color: $cab-color;
-	font-family: "Lobster", cursive;
+	font-family: 'Vollkorn SC', serif;
 	font-size: 42px;
 	border: 3px solid $cab-color;
 	border-radius: $border-rad;
@@ -165,6 +165,17 @@ $border-rad: 5px;
 	height: auto;
 }
 
+@media screen and (max-width: 1210px) {
+	.teacher__title {
+		margin-top: 40px;
+	}
+	.teacher__wrapptable table{
+		&:last-child {
+			margin-left: 0;
+		}
+	}
+}
+
 
 
 @media screen and (max-width: 1024px) {
@@ -193,9 +204,28 @@ $border-rad: 5px;
 	}
 }
 
+@media screen and (max-width: 900px) {
+	.teacher__wrapptable table{
+		width: 350px;
+		text-align: left;
+		&:last-child {
+			margin-left: 30px;
+			width: 350px;
+		}
+	}
+	.firstcell {
+		font-size: 20px;
+	}
+
+	.secondcell {
+		font-size: 20px;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.teacher {
 		padding-bottom: 0;
+		text-align: center;
 	}
 
 	.to-main {
@@ -205,14 +235,13 @@ $border-rad: 5px;
 
 
 	.teacher__title {
+		display: inline-block;
 		margin-top: 80px;
-		margin-left: -10px;
 	}
 
 	.teacher__title--bigwidth {
 		font-size: 46px;
 		padding: 10px 30px;
-		margin-left: -5px;
 	}
 
 	.teacher__main {
@@ -235,8 +264,16 @@ $border-rad: 5px;
 		}
 	}
 
+	.firstcell {
+		font-size: 30px;
+	}
+
+	.secondcell {
+		font-size: 30px;
+	}
+
 	.teacherfoto {
-	margin-right: 0;
+		margin-right: 0;
 	}
 
 	.teacherfoto__image {
@@ -252,6 +289,11 @@ $border-rad: 5px;
 
 	.to-main {
 		margin-left: -55px;
+	}
+
+	.teacher__title {
+		display: inline-block;
+		padding: 10px 20px;
 	}
 
 	.teacher__title--bigwidth {
@@ -270,7 +312,7 @@ $border-rad: 5px;
 	}
 
 	.teacher__wrapptable {
-	width: 400px;
+		width: 400px;
 	}
 
 	.teacher__wrapptable table{
@@ -285,6 +327,10 @@ $border-rad: 5px;
 		&:last-child {
 			width: 300px;
 		}
+	}
+
+	.teacher__main {
+		margin-bottom: 50px;
 	}
 
 
@@ -302,8 +348,8 @@ $border-rad: 5px;
 
 	.teacher-footer {
 		border-top: 3px solid $cab-color;
-		width: 150%;
-		margin-left: -57px;
+		width: 100%;
+		margin-left: 0;
 		text-align: center;
 	}
 
@@ -313,77 +359,102 @@ $border-rad: 5px;
 
 	.teacher-footer__foto-for-mobile {
 		display: inline-block;
-		width: 100%;
+		width: 275px;
 		height: auto;
-		
+		margin-left: -25px;
 	}
 	
 }
 
 @media screen and (max-width: 375px) {
+
+ 	.teacher {
+		max-width: 90%;
+		min-height: 700px;
+		padding: 60px 30px;
+		padding-bottom: 40px;
+		text-align: center;
+		box-shadow: 0 -2px 15px gray;
+		/*для середньої школи*/
+		&--middle {
+			background-color: #8c4da4;
+			background-image: url("../img/fon-middle.jpg");
+			background-size: cover;
+			background-position: center, center;
+		}
+	}
+
 	.teacher__title {
-		margin-top: 80px;
-		margin-left: -35px;
+		display: inline-block;
+		margin: 0 auto;
+		margin-top: 60px;
+		margin-bottom: 20px;
 	}
 
 	.teacher__title--bigwidth {
-		font-size: 22px;
-		padding: 10px 10px;
-		margin-left: -5px;
+		display: inline-block;
+		font-size: 30px;
+		padding: 10px 20px;
 	}
 
 	.teacher__title--inm {
+		display: inline-block;
 		font-size: 40px;
 		padding: 10px 40px;
-		margin-left: -45px;
 	}
 
 	.teacher__title--ukr {
+		display: inline-block;
 		font-size: 40px;
 		padding: 10px 40px;
-		margin-left: -65px;
 	}
 
 	.teacher__title--majs {
-		margin-right: -45px;
+		display: inline-block;
 	}
 
 	.teacher-footer {
-		margin-left: -45px;
+		width: 90%;
+		padding-bottom: 30px;
+		margin-left: 15px;
+	}
+
+	.teacher-footer__foto-for-mobile {
+		display: inline-block;
+		width: 275px;
+		height: auto;
+		margin-left: 0;
 	}
 }
 
 @media screen and (max-width: 320px) {
-	.teacher__title {
-		margin-top: 80px;
-		margin-left: -65px;
-	}
-
-	.teacher__title--bigwidth {
-		font-size: 22px;
-		padding: 10px 10px;
-		margin-left: -25px;
-	}
+	
 
 	.teacher__title--inm {
 		font-size: 35px;
 		padding: 10px 30px;
-		margin-left: -45px;
 	}
 
 	.teacher__title--ukr {
 		font-size: 30px;
 		padding: 10px 20px;
-		margin-left: -45px;
 	}
 
 	.teacher__title--majs {
-		margin-left: -45px;
 	}
 
 	.teacher-footer {
-		margin-left: -55px;
-		width: 200%;
+		width: 90%;
+		padding-bottom: 30px;
+		margin-left: 10px;
 	}
+
+	.teacher-footer__foto-for-mobile {
+		display: inline-block;
+		width: 225px;
+		height: auto;
+		margin-left: 0;
+	}
+
 	
 }
